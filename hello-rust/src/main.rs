@@ -10,6 +10,6 @@ fn main() {
     let mut writer = BufWriter::new(stdout.lock());
     let _ = say(&message, width, &mut writer);
 
-
+    //note this gets executed before the say function.
     println!("Hello, world!");
 }
